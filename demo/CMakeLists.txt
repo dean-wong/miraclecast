@@ -13,6 +13,7 @@ if(NOT GLIB_COMPILE_RESOURCES)
 	message(FATAL_ERROR "glib-compile-resources not found")
 endif()
 
+find_package(PkgConfig)
 find_library(READLINE REQUIRED)
 pkg_check_modules(GIO2 REQUIRED gio-2.0)
 pkg_check_modules(GDK3 REQUIRED gdk-3.0)
